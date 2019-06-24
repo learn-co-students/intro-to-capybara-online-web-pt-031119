@@ -6,7 +6,6 @@ describe "GET '/' - Greeting Form" do
     visit '/'
     expect(page.body).to include("Welcome!")
   end
-
   # New test
   it 'has a greeting form with a user_name field' do
     visit '/'
@@ -25,4 +24,6 @@ describe "POST '/greet' - User Greeting" do
 
     expect(page).to have_text("Hi Avi, nice to meet you!")
   end
+  
+  
 end
